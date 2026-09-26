@@ -1,0 +1,11 @@
+[package]
+name = "epidermis-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Credential and exact-action authorization primitives for Epidermis"
+
+[dependencies]
+fips205 = { version = "0.4.1", default-features = false, features = ["default-rng", "slh_dsa_sha2_128s"] }
+rand_core = { version = "0.6", features = ["getrandom"] }
+sha2 = "0.10"
